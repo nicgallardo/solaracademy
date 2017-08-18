@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  --main-color: rgba(238, 110, 115, 1);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-color: var(--main-color);
+}
+
+table {
+  border: 1px solid var(--main-color);
+}
+
+td {
+  height: 4em;
+  width: 3em;
+}
