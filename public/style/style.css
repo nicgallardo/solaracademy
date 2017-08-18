@@ -3,7 +3,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
   --main-color: rgba(238, 110, 115, 1);
-  --dim-color: rgba(238, 110, 115, 0.5);
 }
 
 main {
@@ -20,8 +19,95 @@ footer {
 }
 
 .square {
-  border: 1px solid var(--main-color);
   height: 30vh;
   width: 30vh;
-  background-color: var(--dim-color);
+  padding: 4px;
+}
+
+#bg-0 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img0.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-1 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-2 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-3 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img3.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-4 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img4.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-5 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img5.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-6 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img6.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-7 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img7.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-8 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img8.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-9 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img9.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-10 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img10.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
