@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  --main-color: rgba(238, 110, 115, 1);
+}
+
+main {
+  padding: 40px 0;
+  flex: 1 0 auto;
+  background-image: url('../assets/img-background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+footer {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  background-color: var(--main-color);
+}
+
+.square {
+  height: 30vh;
+  width: 30vh;
+  padding: 4px;
+}
+
+#bg-0 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img0.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-1 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-2 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-3 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img3.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-4 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img4.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-5 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img5.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-6 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img6.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-7 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img7.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-8 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img8.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-9 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img9.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-10 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img10.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
