@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
 
   for (let i = 0; i < grid.length; i++) {
-
+    
     clickListen(grid[i])
   }
 
