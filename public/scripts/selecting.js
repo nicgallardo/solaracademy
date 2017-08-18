@@ -1,13 +1,22 @@
 var points = 0;
+var show;
 
-const scored = (id) => {
-  points++
-  $('#points').text(points);
+const clicked = (id) => {
+  console.log("click");
+  function sortNumber(a,b) {
+    return a - b;
+  }
+  var sorted = numArray.sort(show);
+
+
+
+  // points++
+  // $('#points').text(points);
 }
 
 const clickListen = (id) => {
-  $(String("#gr-" + id)).click(function(e) {
-    scored($(this).attr('id'))
+  $(String("#bg-" + id)).click(function(e) {
+    clicked($(this).attr('id'))
   });
 };
 
@@ -31,17 +40,17 @@ $( document ).ready(function() { // TODO: click event
   // var pulled = [];
 
   for (let i = 0; i < grid.length; i++) {
-    $(String('#gr-'+ i)).prepend('<div id="bg-' + i + '"><img src="' + "./assets/img" + i + ".jpg"+ '" /></div>')
+    $(String('#gr-'+ i)).prepend('<div data-points="' + i + '" id="bg-' + i + '"><img src="' + "./assets/img" + i + ".jpg"+ '" /></div>')
     clickListen(grid[i]);
   };
 
-  var show = shuffle(numbs);
+  show = shuffle(numbs);
   var hide = numbs;
 
-  for (var i = 0; i < hide.length; i++) {
+  for (let i = 0; i < hide.length; i++) {
     $('#gr-'+hide[i]).attr("disabled", "disabled").off('click');
   }
-  for (var i = 0; i < show.length; i++) {
+  for (let i = 0; i < show.length; i++) {
     clickListen(show[i])
   }
 
