@@ -3,17 +3,15 @@ body {
   min-height: 100vh;
   flex-direction: column;
   --main-color: rgba(238, 110, 115, 1);
+  --dim-color: rgba(238, 110, 115, 0.5);
 }
 
 main {
+  padding: 40px 0;
   flex: 1 0 auto;
   background-image: url('../assets/img-background.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-
-header {
-  margin-bottom: 40px;
 }
 footer {
   padding-bottom: 40px;
@@ -25,4 +23,5 @@ footer {
   border: 1px solid var(--main-color);
   height: 30vh;
   width: 30vh;
+  background-color: var(--dim-color);
 }
