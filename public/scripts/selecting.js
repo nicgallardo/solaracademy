@@ -6,43 +6,44 @@ const scored = (id) => {
 }
 
 const clickListen = (id) => {
-  $( "#"+id ).click(function(e) {
+  $(String("#gr-" + id)).click(function(e) {
     scored($(this).attr('id'))
   });
 };
 
-
-
-$( document ).ready(function() {
-
-  // const grid = ["gr-0", "gr-1", "gr-2", "gr-3", "gr-5", "gr-6", "gr-7", "gr-8", "gr-9", "gr-10", "gr-11", "gr-12", "gr-13"];
-  // var numbs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-  // var pulled = [];
-  for (let i = 0; i < grid.length; i++) {
-    //
-    // var selected = array.splice(Math.floor(Math.random()*13), 1);
-    //
-    // var numSelected = "img" +  + ".jpg";
-    clickListen(grid[i])
-  }
-
-});
-
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
+function shuffle(n) {
+  var currentIndex = n.length, temporaryValue, randomIndex;
   while (0 !== currentIndex) {
-
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
+    temporaryValue = n[currentIndex];
+    n[currentIndex] = n[randomIndex];
+    n[randomIndex] = temporaryValue;
+  }
+  return n.splice(0,5);
+}
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+
+$( document ).ready(function() { // TODO: click event
+
+  const grid = ["gr-0", "gr-1", "gr-2", "gr-3", "gr-5", "gr-6", "gr-7", "gr-8", "gr-9", "gr-10", "gr-11", "gr-12", "gr-13"];
+  var numbs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  // var pulled = [];
+
+  for (let i = 0; i < grid.length; i++) {
+    $(String('#gr-'+ i)).prepend('<div id="bg-' + i + '"><img src="' + "./assets/img" + i + ".jpg"+ '" /></div>')
+    clickListen(grid[i]);
+  };
+
+  var show = shuffle(numbs);
+  var hide = numbs;
+
+  for (var i = 0; i < hide.length; i++) {
+    $('#gr-'+hide[i]).attr("disabled", "disabled").off('click');
+  }
+  for (var i = 0; i < show.length; i++) {
+    clickListen(show[i])
   }
 
-  return array.slice(0,5);
-}
+
+});
