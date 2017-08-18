@@ -19,10 +19,10 @@ footer {
 }
 
 .square {
-  height: 30vh;
-  width: 30vh;
+  box-sizing: border-box;
   padding: 4px;
 }
+
 
 #bg-0 {
   height: 100%;
@@ -64,6 +64,14 @@ footer {
   background-repeat: no-repeat;
 }
 
+
+#bg-5 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/img5.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 #bg-6 {
   height: 100%;
@@ -117,14 +125,6 @@ footer {
   height: 100%;
   width: 100%;
   background-image: url('../assets/img12.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#bg-13 {
-  height: 100%;
-  width: 100%;
-  background-image: url('../assets/img13.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
