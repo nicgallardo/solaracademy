@@ -15,11 +15,8 @@ footer {
   background-color: var(--main-color);
 }
 
-table {
+.square {
   border: 1px solid var(--main-color);
-}
-
-td {
-  height: 4em;
-  width: 3em;
+  height: 30vh;
+  width: 30vh;
 }
